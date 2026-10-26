@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Configurações</title>
+
+    <link rel="stylesheet" href="CSS/configuracao.css">
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <header class="cabecalho">
+
+            <a href="Menu.html" id="voltar" aria-label="Voltar">←</a>
+
+            <h1>Configurações</h1>
+
+        </header>
+
+        <section>
+
+            <h2>Geral</h2>
+
+            <!-- Idioma -->
+
+            <button class="opcao" id="btnIdioma">
+                <span>Idioma</span>
+
+                <span class="valor" id="idiomaAtual">
+                    Português
+                </span>
+
+                <span class="seta">›</span>
+            </button>
+
+            <div class="detalhes" id="painelIdioma" hidden>
+
+                <label for="idioma">Escolhe o idioma:</label>
+
+                <select id="idioma">
+                    <option value="Português">Português</option>
+                    <option value="Emakhua">Emakhua</option>
+                    <option value="Ximakonde">Ximakonde</option>
+                    <option value="Muani">Muani</option>
+                </select>
+
+            </div>
+
+
+            <!-- Tamanho do texto -->
+
+            <button class="opcao" id="btnTamanho">
+                <span>Tamanho do texto</span>
+
+                <span class="valor" id="tamanhoAtual">
+                    Médio
+                </span>
+
+                <span class="seta">›</span>
+            </button>
+
+            <div class="detalhes" id="painelTamanho" hidden>
+
+                <label for="tamanho">Escolhe o tamanho:</label>
+
+                <select id="tamanho">
+                    <option value="pequeno">Pequeno</option>
+                    <option value="medio">Médio</option>
+                    <option value="grande">Grande</option>
+                </select>
+
+            </div>
+
+
+            <!-- Som -->
+
+            <div class="opcao">
+
+                <span>Som</span>
+
+                <label class="interruptor">
+                    <input type="checkbox" id="som">
+                    <span class="deslizador"></span>
+                </label>
+
+            </div>
+
+
+            <!-- Vibração -->
+
+            <div class="opcao">
+
+                <span>Vibração</span>
+
+                <label class="interruptor">
+                    <input type="checkbox" id="vibracao">
+                    <span class="deslizador"></span>
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <section class="privacidade">
+
+            <h2>Privacidade</h2>
+
+            <!-- Privacidade de dados -->
+
+            <button class="opcao" id="btnPrivacidade">
+                <span>Privacidade de dados</span>
+                <span class="seta">›</span>
+            </button>
+
+            <div class="detalhes" id="painelPrivacidade" hidden>
+
+                <h3>Privacidade de dados</h3>
+
+                <p>
+                    As tuas preferências desta página são guardadas
+                    no armazenamento local do navegador.
+                </p>
+
+                <p>
+                    Evita guardar senhas ou informações pessoais
+                    sensíveis no armazenamento local.
+                </p>
+
+            </div>
+
+
+            <!-- Limpar histórico -->
+
+            <button class="opcao" id="btnHistorico">
+                <span>Limpar histórico</span>
+                <span class="seta">›</span>
+            </button>
+
+            <div class="detalhes" id="painelHistorico" hidden>
+
+                <p>
+                    Podes apagar o histórico de traduções guardado
+                    por esta plataforma neste navegador.
+                </p>
+
+                <button id="limpar" class="botaoLimpar">
+                    Apagar histórico
+                </button>
+
+                <p id="mensagem" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="JS/configuracao.js"></script>
+
+</body>
+</html>
