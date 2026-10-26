@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f3f3;
+    font-family: Georgia, serif;
+    padding: 32px;
+}
+
+.pagina {
+    background: white;
+    min-height: 690px;
+    border-radius: 4px;
+    padding: 25px 30px;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.marca img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.marca h2 {
+    font-size: 35px;
+    font-weight: normal;
+    color: black;
+    font-weight: bold;
+}
+#aqui{
+    color: #389b25;
+    font-weight: bold;
+}
+
+.marca h2 span,
+.apresentacao span {
+    color: #389b25;
+}
+
+.marca p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.menu a:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    color: #389b25;
+}
+.icone {
+    font-family: Arial, sans-serif;
+    font-size: 34px;
+    line-height: 1;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    padding: 50px;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.apresentacao h1 {
+    color: #389b25;
+    font-size: 31px;
+    font-weight: normal;
+}
+
+.apresentacao h2 {
+    margin-top: 65px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#frase {
+    color: black;
+    font-size: 25px;
+    margin-top: 42px;
+}
+
+/* RETÂNGULOS DOS IDIOMAS */
+
+.idiomas {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 75px;
+}
+
+.retangulo {
+    width: 250px;
+    min-height: 92px;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 25px;
+    border: 0.5px solid black;
+    background-color: rgb(217 217 217 / 75%);
+    box-shadow: 0 0 5px #575d55;
+    padding: 80px;
+    width: 3500px;
+}
+
+.retangulo strong {
+    display: block;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.retangulo small {
+    font-size: 15px;
+}
+
+.retangulo:hover {
+    border-color: #389b25;
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* BOTÕES */
+
+/*.botoes {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    margin-top: 75px;
+}
+
+.botoes button {
+    width: 325px;
+    padding: 8px 20px;
+
+    border-radius: 30px;
+    font-family: Georgia, serif;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#comecar {
+    background: #55a33e;
+    color: white;
+    border: none;
+}
+
+#conhecer {
+    background: #d4d4d4;
+    color: white;
+    border: 2px solid #777;
+}
+
+.botoes button:hover {
+    opacity: 0.8;
+}*/
+
+/* ADAPTAÇÃO PARA TELEMÓVEIS */
+
+@media (max-width: 850px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .pagina {
+        padding: 20px;
+    }
+
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .apresentacao h1 {
+        font-size: 25px;
+    }
+
+    .idiomas {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 45px;
+    }
+
+    .retangulo {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .botoes button {
+        width: 100%;
+        max-width: 350px;
+    }
+}
